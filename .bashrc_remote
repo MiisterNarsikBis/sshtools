@@ -631,18 +631,18 @@ case "$(whoami)" in
         PS1_USER_COLOR="$green"
         ;;
 esac
-export PS1_USER_COLOR
+#export PS1_USER_COLOR
 
-export PS1="\[${PS1_USER_COLOR}\]\u\[${grey}\]@\[${blue}\]\h \[${grey}\]>\[${reset}\] "
-p() {
-    export PS1="\[${PS1_USER_COLOR}\]\u\[${grey}\]@\[${blue}\]\h\[${yellow}\]:\w \[${grey}\]>\[${reset}\] "
-}
-export -f p
+#export PS1="\[${PS1_USER_COLOR}\]\u\[${grey}\]@\[${blue}\]\h \[${grey}\]>\[${reset}\] "
+#p() {
+#    export PS1="\[${PS1_USER_COLOR}\]\u\[${grey}\]@\[${blue}\]\h\[${yellow}\]:\w \[${grey}\]>\[${reset}\] "
+#}
+#export -f p
 
-hp() {
-    export PS1="\[${PS1_USER_COLOR}\]\u\[${grey}\]@\[${blue}\]\h \[${grey}\]>\[${reset}\] "
-}
-export -f hp
+#hp() {
+#    export PS1="\[${PS1_USER_COLOR}\]\u\[${grey}\]@\[${blue}\]\h \[${grey}\]>\[${reset}\] "
+#}
+#export -f hp
 
 
 bind '"\e[A": history-search-backward' # Up arrow to browse commands with similar start
